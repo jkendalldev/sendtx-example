@@ -3,7 +3,7 @@ async function main() {
     const { API_URL, PRIVATE_KEY } = process.env;
     const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
     const web3 = createAlchemyWeb3(API_URL);
-    const myAddress = '0x5e3cAfc275E98C7BA0D57A8898d1215b79e10709' //TODO: replace this address with your own public address
+    const myAddress = '' //TODO: replace this address with your own public address
    
     const nonce = await web3.eth.getTransactionCount(myAddress, 'latest'); // nonce starts counting from 0
 
